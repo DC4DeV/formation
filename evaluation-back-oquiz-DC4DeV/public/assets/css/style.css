@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre:400,700');
+
+body {
+  background-color: #FAFAFA;
+  font-family: 'Miriam Libre';
+}
+
+/* MENUS */
+nav {
+  margin-bottom: 3em;
+}
+nav.subnav {
+  margin-top: -3em;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: none;
+  flex-grow: 1;
+  text-align: center;
+  height: 50px;
+}
+
+.menu .title {
+  flex-grow: 5;
+}
+
+.menu .search input {
+  border: none;
+  outline: none;
+}
+
+.menu:last-child div {
+  border-top: none;
+}
+
+
+.menu div.search-results {
+  position: absolute;
+  display: none;
+  width: 170px;
+  top: 60px;
+}
+
+.search-results li:hover {
+  cursor: pointer;
+  background-color: #efefef;
+}
+
+/* CONTENU */
+
+ .cards {
+   align-items: center;
+ }
+
+.question {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 1rem;
+  padding-left: 2rem;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  padding: 0;
+
+}
+
+.card-header {
+  box-sizing: border-box;
+  font-size: 1.1rem;
+}
+
+.card-body {
+  align-items: stretch;
+  padding-left: 3rem;
+}
+
+.card-footer {
+  align-items: flex-end;
+  text-align: center;
+}
+
+.taglevel{
+  margin-left: 1rem;
+  float: right;
+  text-transform: capitalize;
+  height: 1.3em;
+  min-width: 5rem;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.debutant {
+  color: white;
+  background-color: green;
+
+}
+.confirme {
+  color: white;
+  background-color: orange;
+
+}
+.expert{
+  color: white;
+  background-color: red;
+
+}
+.none {
+  display: none;
+}
+
+.cite{
+  font-size: 0.7rem;
+  margin-bottom: 0;
+}
+.link  {
+  font-size: 0.7rem;
+}
+
+#score{
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.good {
+  color: rgba(0, 255, 25, 0.8);
+}
+.wrong {
+  color: rgba(243, 233, 130, 0.9);
+}
+/* FOOTER */
+footer {
+  border-top: 1px solid #e3e3e3;
+  padding: .4em;
+  font-size: .8em;
+  text-align: center;
+}

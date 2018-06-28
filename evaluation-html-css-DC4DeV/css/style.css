@@ -1,0 +1,269 @@
+/* regalge de base du body avec une limitation de la largeur a 1200px */
+body {
+  background: url('../images/background.png') repeat;
+  text-align: center;
+  font-family: 'WeDrive';
+  font-size: 1em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Reglage de la police et de la marge avec le premier article de la page */
+header {
+  margin-bottom: 4rem;
+  font-family: 'WeDrive';
+}
+
+/* Ajout d'un pading top du menu de navigation */
+header nav {
+  padding-top: 1.6rem;
+}
+
+/* Reglage de la nav */
+header li a {
+  font-family: 'Drive';
+  margin-right:1em;
+  background: #F7F6F4;
+  padding:0.8em;
+  color: #716766;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 2px;
+  font-size: 0.8rem;
+}
+
+/* changement d'etat au survol de lien de la nav */
+header li a:focus {
+  color: white;
+  background: #635756;
+}
+
+/* Reglage de la div parent des articles */
+.container {
+  margin:auto;
+  display: flex;
+  margin-top: 4rem;
+  background: white;
+  height: 28rem;
+  box-shadow: 0px 0px 11px 1px rgba(119, 119, 119, 0.5);
+  -moz-box-shadow: 0px 0px 11px 1px rgba(119, 119, 119, 0.5);
+  -webkit-box-shadow: 0px 0px 11px 1px rgba(119, 119, 119, 0.5);
+}
+
+/* Style de la date des articles */
+.container .date {
+  text-align: right;
+  font-size: 0.7em;
+  color: #8e8585;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Style  des articles */
+.container .main {
+  padding: 1em 1em 0.8em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+}
+
+.container .content {
+  margin: 3em 0 1em 0;
+  text-align: left;
+  padding: 0 1em 0 1em;
+  overflow: auto;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.container .content h2 {
+  font-family: 'Drive';
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin-bottom: 0.4em;
+  font-weight: 800;
+  color: #5a4a4a;
+}
+
+.container .content p {
+  font-size: 0.8em;
+  line-height: 1.7em;
+  color: #918989;
+}
+
+.container .bottom  {
+  display: flex;
+  padding-left: 1em;
+  justify-content: space-between;
+}
+
+.container .bottom .tag {
+  text-transform: uppercase;
+  color:#878484;
+  background-color: #f9f8f8;
+  padding: 0.4em;
+  border-radius: 2px;
+  font-size: 0.7em;
+  margin-right: 0.2em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* style du survol du bouton social */
+.container .bottom .tag:hover {
+  color:#f9f8f8;
+  background-color: #878484;
+}
+/* style du bouton social */
+.container .bottom .social img {
+  background: #e0dddd;
+  border-radius: 50%;
+  height: 1.250em;
+  width: 1.250em;
+}
+/* survole des icones social */
+.container .bottom .social img:hover {
+  background-color: #878484;
+}
+
+.btn-select {
+  margin-top: 2.5em;
+}
+
+/* style du bouton changement de page */
+.btn-select button {
+  font-weight: 600;
+  color: #efeded;
+  background: #a49c9a;
+  border: none;
+  padding: 0.7em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  margin-right: 1em;
+  width: 9em;
+}
+
+/* style du survol du bouton changement de page */
+.btn-select button:hover {
+  background: #5a4a4a;
+}
+/* Stylisation du pied de page */
+footer {
+  margin: auto;
+  margin-top: 2em;
+  border-top: solid 2px #ddddda;
+  font-size: 0.8em;
+  padding: 0.8em 0 2em 0;
+}
+
+/* Stylisation des liens du pied de page */
+footer li {
+  margin-top: 0.2em;
+  padding: 0.2em 0.7em 0 0.7em;
+  font-size: 0.7rem;
+}
+
+/* Stylisation des liens du pied de page */
+footer a {
+  text-decoration: none;
+  color: #7d7372;
+}
+/* style des liens du footer au survol de la souris */
+footer a:hover {
+  color: #5a4a4a;
+}
+
+/* ciblage du dernier enfant p de .copyright */
+.copyright p:last-child {
+  color: #b6b2af;
+  font-size: 0.7rem;
+}
+/* Modification des classes à partir de 300px */
+@media (min-width:300px) {
+  header {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+
+  }
+
+  headr ul {
+    height: 5rem;
+
+  }
+
+  header li a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .container>img {
+    display: none;
+  }
+
+  .container {
+    width: 100vw;
+  }
+}
+
+/* Modification des classes a partir de 900px */
+@media (min-width:900px) {
+  /* Reglage de toute les balises li */
+  li {
+    display: inline-block;
+  }
+
+  header {
+    display:inherit;
+  }
+
+  header li a {
+    display: inherit;
+  }
+  /* positionnementdu logo  */
+  #logo {
+    display: inherit;
+    position: absolute;
+    margin-left: 3em;
+  }
+
+  .container>img {
+    display: block;
+    width: 40%;
+  }
+
+  .container {
+    width: 60vw;
+    max-width: 800px;
+  }
+
+  .pink {
+    background: center url('../images/pink-triangle.png');
+    height: 0.688em;
+    width: 60vw;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .blue {
+    background: center url('../images/blue-triangle.png');
+    height: 0.688em;
+    width: 60vw;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  footer {
+    width: 60vw;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copyright p:last-child {
+    text-align: right;
+  }
+}

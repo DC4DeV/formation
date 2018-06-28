@@ -1,0 +1,55 @@
+@import "~/styles/vars"
+
+.app-settings
+  position: absolute
+  top: 1rem
+  right: 0
+  display: flex
+  align-items: center
+  transform: translateX(17em)
+  transition: $animation-duration
+
+  &-toggle, &-form, &-button
+    display: inline-block
+
+  &-toggle
+    margin-right: 1em
+
+    &::before
+      transform: rotate(0)
+      transition: $animation-duration
+      content: "+"
+      display: block
+      cursor: pointer
+      font-size: 2em
+      font-weight: bold
+
+  &--open
+    transform: translateX(0)
+
+  &--open &
+    &-toggle
+      &::before
+        transform: rotate(45deg)
+
+    &-form
+      opacity: 1
+
+  &-form
+    width: 18em
+    opacity: 0
+    transition: $animation-duration
+
+  &-input, &-button
+    background: transparent
+    font-size: 1.1rem
+
+  &-input
+    width: 80%
+    border: 1px solid $border-color
+    padding: 0.5rem
+
+  &-button
+    width: 20%
+    border: none
+    text-transform: uppercase

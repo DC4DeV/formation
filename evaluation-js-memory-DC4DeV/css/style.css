@@ -1,0 +1,66 @@
+body {
+  margin: auto;
+  width: 900px;
+}
+
+header {
+  height: 100px;
+  background-color: #EEEEEE;
+  text-align: center;
+  padding-top: 1.6em;
+  margin-bottom: 3em;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+tr {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Designe le plateau de carte*/
+#board {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  text-align: center;
+  background: #DDDDFF;
+  padding: 0.5em 0;
+  box-sizing: border-box;
+  margin: 0 3em;
+}
+
+/* Class pour le dimentionnement des cartes */
+.card {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0.3em ;
+}
+
+/* Classe des images cachés */
+.cache {
+  height: 100%;
+  background-color: #AAAAAA;
+}
+
+/* Classe des images retournés */
+.image {
+  height: 100%;
+  background: url('../images/cards.png');
+}
+
+/* Classe du survol de la souris   */
+.cache:hover {
+  background: rgba(140, 140, 140, 0.8);
+}
+
+/* classe des cartes paires */
+.pair {
+  height: 100%;
+  background: url('../images/cards.png');
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/font.css">
+        <link rel="stylesheet" href="../css/style.css">
+		<title>Blog</title>
+	</head>
+	<body>
+        <!-- Entete de page avec la navigation -->
+		<header>
+        <div id="logo"><img src="../images/logo.png" alt="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Notre révolution</a></li>
+                <li><a href="#">Partage de frais</a></li>
+                <li><a href="#">Tarifs</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+		</header>
+        <!-- Chaque article est rangé dans une balise article de classe container qui est en display flex -->
+        <article class="container">
+            <!-- Image de l'article placé sur le coté droit car le parent est en display flex, donc son comportement par defaut est flex direction row -->
+            <img src="../images/src/photo1.jpg" alt="Une autoroute et des buildings">
+            <!-- Div du contenu textuel de l'article qui elle aussi est en diplay flex, placé grace au comportement par defut de flex direction juste aprés l'image, -->
+            <div class="main">
+                <!-- Date de l'article aui est place droite de sa div grace à text align right  -->
+                <div class="date">
+                    <span>Le 21 Juillet 2013</span>
+                </div>
+                <!-- Le contenu de l'article qui est en text align right pour supprimer le comportement par defaut imposé par le margin auto du body, cette classe possede un flex grow à 1 pour s'etendre sur toute la hauteur restante et pousser les autres enfants de sa div parent-->
+                <div class="content">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa magnam voluptatum provident molestias illo officia assumenda possimus. Corrupti soluta obcaecati molestias quod at laborum dicta accusamus magnam, tempora harum. Ad officia in officiis accusamus itaque doloribus debitis nihil optio repudiandae? </p>
+                </div>
+                <!-- Cette classe possede egalement le display flex comme son parent mais pour ses propres enfants -->
+                <div class="bottom">
+                    <!-- Cette classe est collé sur la gauche car son parent est en justify content space between -->
+                    <div>
+                        <a href="#" class="tag">Catégorie 3</a>
+                    </div>
+                    <!-- Cette classe est collé sur la droite car son parent est en justify content space between -->
+                    <span class="social">
+                        <a href="#"><img src="../images/facebook.png" alt=""></a>
+                        <a href="#"><img src="../images/twitter.png" alt=""></a>
+                    </span>
+                </div>
+            </div>
+        </article>
+        <!-- cette div ne sert qu'a afficher les trianles de couleur sous les articles -->
+        <div class="pink"></div>
+        <!-- Les articles suivant ne sont pas commentés car ils sont les clones du précedent qui lui est commenté -->
+        <article class="container">
+            <img src="../images/src/photo2.jpg" alt="Une femme marchant avec sa valise et des ballons">
+            <div class="main">
+                <span class="date">Le 15 Juillet 2013</span>
+                <div class="content">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta molestiae excepturi perferendis.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit quae facilis, sed facere dolor vel delectus harum quo dolore ex odit voluptatum animi eveniet aliquam similique culpa maxime fuga velit. Nemo, consectetur nihil, cumque maiores dolores, ipsum ea dolorem, accusamus numquam sunt id ex obcaecati iure sint et illum odit neque architecto? Deserunt consequatur cum provident animi harum. Doloremque animi nesciunt, delectus nulla sed est veritatis quas corrupti et quidem facilis, repellendus, sit consectetur cum nostrum molestias ut ullam.</p>
+                </div>
+                <div class="bottom">
+                    <div>
+                    <a href="#" class="tag">Catégorie 1</a>
+                    <a href="#" class="tag">Catégorie 2</a>
+                    </div>
+                    <span class="social">
+                        <a href="#"><img src="../images/facebook.png" alt=""></a>
+                        <a href="#"><img src="../images/twitter.png" alt=""></a>
+                    </span>
+                </div>
+            </div>
+        </article>
+        <div class="blue"></div>
+        <article class="container">
+            <img src="../images/src/photo3.jpg" alt="Rue deserte et murs tagés">
+            <div class="main">
+                <span class="date">Le 12 Juillet 2013</span>
+                <div class="content">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quis nobis sint.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis veritatis at et, aliquam repudiandae repellat. Qui quibusdam quia odit iusto aliquid fugit nemo amet, ea quae omnis est voluptatem assumenda vel illo temporibus, inventore aspernatur numquam quasi. Delectus temporibus, excepturi distinctio incidunt tempore harum maxime laboriosam, minus accusamus laudantium expedita aliquid cumque sequi at corporis ullam eaque eum non iusto quia? Vel nemo odit ipsum numquam dicta voluptatum. Repudiandae itaque, odio inventore velit officia officiis ex asperiores. </p>
+                </div>
+                <div class="bottom">
+                    <div>
+                        <a href="#" class="tag">Catégorie 1</a>
+                    </div>
+                    <span class="social">
+                        <a href="#"><img src="../images/facebook.png" alt=""></a>
+                        <a href="#"><img src="../images/twitter.png" alt=""></a>
+                    </span>
+                </div>
+            </div>
+        </article>
+        <div class="pink"></div>
+        <article class="container">
+            <img src="../images/src/photo4.jpg" alt="Light-painting de phares de voiture sur une autoroute">
+            <div class="main">
+                <span class="date">Le 15 Juillet 2013</span>
+                <div class="content">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quasi debitis asperiores a, nulla amet eos. Consectetur sed tempora, debitis. Quasi aperiam impedit illum autem ut in eveniet sequi ratione, nihil magnam, tenetur. Omnis atque sunt consequatur necessitatibus suscipit autem voluptates, odio consectetur porro dolor obcaecati quasi laboriosam distinctio, eaque ab similique fugiat maxime et veritatis quae rem maiores delectus expedita est.</p>
+                </div>
+                <div class="bottom">
+                    <div>
+                        <a href="#" class="tag">Catégorie 1</a>
+                        <a href="#" class="tag">Catégorie 2</a>
+                    </div>
+                    <span class="social">
+                        <a href="#"><img src="../images/facebook.png" alt=""></a>
+                        <a href="#"><img src="../images/twitter.png" alt=""></a>
+                    </span>
+                </div>
+            </div>
+        </article>
+        <!-- FIN DES ARTICLES -->
+        <!-- bouton de parcours des articles précedents et suivants -->
+        <div class="blue"></div>
+        <div class="btn-select">
+            <button>Precedent</button>
+            <button>Suivant</button>
+        </div>
+        <!-- PIED DE PAGE -->
+        <!-- Le footer est aussi en display flex pour le positionnement de ses enfants de part et d'autre de l'espace grace au justify content space between -->
+        <footer>
+            <span class="copyright">
+                <p>Webdrive - &copy; 2013 Tous droits réservés</p>
+                <p>Design agence wype</p>
+            </span>
+            <ul>
+                <li><a href="">Mentions légales</a></li>
+                <li><a href="">Condition générales</a></li>
+                <li><a href="">Presse</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </footer>
+	</body>
+</html>

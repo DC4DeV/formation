@@ -1,0 +1,22 @@
+{
+    "name": "mint/oquiz",
+    "description": "Evaluation Back",
+    "type": "project",
+    "authors": [
+        {
+            "name": "CD4DeV",
+            "email": "damien.canovas90@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "league/plates": "^3.3",
+        "altorouter/altorouter": "^1.2",
+        "symfony/var-dumper": "^3.4"
+    },
+    "autoload": {
+    "psr-4": {
+        "Oquiz\\": "app/"
+      }
+    }
+}

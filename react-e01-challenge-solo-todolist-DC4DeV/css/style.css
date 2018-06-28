@@ -1,0 +1,55 @@
+body {
+  text-align: center;
+  background-color: #2e5849;
+  width: 30rem;
+  margin: auto;
+}
+.input {
+  background: #1c382f;
+  border:#183129;
+  height: 3rem;
+  width: 100%;
+  color:#fff;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+.input::placeholder {
+  padding-left: 1rem;
+  color:rgba(255, 255, 255, .5);
+  font-size: 1.2rem;
+}
+button {
+  height:3rem;
+  width: 10%;
+  display: none;
+}
+form {
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+}
+h3 {
+  margin: auto;
+  color: white;
+  border-bottom: 1px solid white;
+  text-align: left;
+  /* width: 33rem; */
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding-bottom: 0.6rem;
+}
+.task {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  background: #eee;
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  border-radius: 5px;
+  text-align: left;
+  padding: 1rem;
+}
+.checked{
+  text-decoration: line-through;
+  background-color: rgba(141, 163, 155, .5)
+}

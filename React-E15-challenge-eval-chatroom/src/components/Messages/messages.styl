@@ -1,0 +1,19 @@
+@import "~/styles/vars"
+
+.app-messages
+  border-top: 1px solid $border-color
+  height: calc(100vh - 10rem)
+  overflow-y: auto
+
+.app-message
+  padding: 1.5rem 1rem
+
+  &-user
+    text-transform: uppercase
+    font-size: 0.8rem
+
+  &-content
+    font-size: 1.2rem
+
+  &--own
+    background-color: $bg-own-message
